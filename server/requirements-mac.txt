@@ -88,6 +88,8 @@ fairseq @ git+https://github.com/brandonkovacs/fairseq.git
 # =============================================================================
 # Additional Dependencies (required by above packages)
 # =============================================================================
+# setuptools 81+ removed pkg_resources, which librosa 0.9.1 still imports.
+setuptools==80.10.2
 Cython==3.2.4
 protobuf==6.33.4
 pydantic==1.10.26
